@@ -1,0 +1,15 @@
+<h2>Hello {{ title() }}</h2>
+<h3>{{ computeValue() }}</h3>
+<h3>Read Only Title {{ readonlyTitle() }}</h3>
+
+<div>
+  <button type="button" (click)="changeTitle()">Change Title</button>
+  <br />
+  <button type="button" (click)="updateTitle()">Update Title</button>
+</div>
+<hr />
+<h2>Data set : {{ dataset() | json }}</h2>
+<div>
+  <button type="button" (click)="mutateDataset()">Mutate Dataset</button>
+  <br />
+</div>
